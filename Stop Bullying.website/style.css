@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+html{
+    font-family: "Noto Sans Thai", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: #FAE8B8;
+}
+header{
+    width: 100%;
+    background-color: #FEAF3B;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+nav{
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 2.5rem;
+    color: white;
+    margin-left: 20px;
+
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.nav-list li{
+    list-style: none;
+    margin: 0 1.5rem;
+}
+li a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+li a:hover{
+    color: #FAE8B8;
+}
+.option{
+    display: grid;
+    margin-top: 300px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 30px;
+}
+img{
+    width: 70%;
+    pointer-events: auto;
+    margin-top: 20px;
+}
+a{
+    width: 70%;
+    z-index: 99;
+}
+.show{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    pointer-events: none;
+    justify-content: end;
+    width: 290%;
+}
+
+@media (min-width: 300px) and (max-width: 480px){
+    .logo{
+        font-size:1.1rem;
+        margin-left: 5px;
+    }
+    .option{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        margin-top: 100px;
+        overflow: auto;
+        margin-left: 100px;
+    }
+
+    img{
+        width: 70%;
+    }
+    .show img{
+        width: 30%;
+        z-index: -1;
+    }
+    li a {
+       margin-right: 15px;
+        font-size: 2rem;
+    
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .logo{
+        font-size: 1.2rem;
+    }
+    .option{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        margin-top: 100px;
+        overflow: auto;
+        margin-left: 150px;
+    }
+
+    img{
+        width: 50%;
+    }
+    .show img{
+        width:20%;
+        z-index: -1;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .logo{
+        font-size: 2rem;
+    }
+    .option{
+        display: grid;
+        margin-top: 100px;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 30px;
+        margin-left: 50px;
+    }
+
+    img{
+        width: 30%;
+    }
+    .show img{
+        width: 20%;
+        z-index: -1;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1280px){
+    .logo{
+        font-size: 2rem;
+    }
+    .option{
+        display: grid;
+        margin-top: 100px;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        margin-left: 100px;
+        gap: 30px;
+    }
+
+    img{
+        width: 30%;
+    }
+    .show img{
+        width: 20%;
+        z-index: -1;
+    }
+}
+
+
+@media (min-width: 1281px){
+    .logo{
+        font-size: 2rem;
+    }
+    .option{
+        display: grid;
+        margin-top: 100px;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 30px;
+    }
+    img{
+        width: 17%;
+        margin-left: 350px;
+    }
+    .show img{
+    
+        z-index: -1;
+    }
+}

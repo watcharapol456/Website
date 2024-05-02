@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Bullying</title>
+    <link rel="stylesheet" href="stylemodule3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="stop.png">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Module3 วิธีรับมือ</div>
+                <ul class="nav-list">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+       </header>
+       <div class="vdo-continer">
+        <video src="video/M3.mp4" controls></video>
+        <button class="startgame">Game</button>
+       </div>
+       <div class="howto-container">
+        <div class="box-howto">
+        <div class="closehowto"><i class="fa-solid fa-xmark close-howto"></i></div>
+        <h1>วิธีการเล่น</h1>
+        <p>เกมจะมีการจำลองสถานการณ์ต่าง ๆ  ขึ้นมามีทั้งหมด 12 สถานการณ์ ในแต่ละโมดูลมีทั้งหมด 4 สถานการณ์ ผู้เล่นจะต้องเลือกคำตอบให้ถูกต้องเพื่อไปยังคำถามต่อไป  <br>
+            ตัวอย่าง  หมูน้อยล้อชื่อพ่อแม่กานต์ เป็นการบูลลี่ประเภทใด <br>
+            คำตอบข้อที่ 1 การบูลลี่ทางคำพูด <br>
+            คำตอบข้อที่ 2 การบูลลี่ทางสังคม <br>
+            คำตอบข้อที่ 3 การบูลลี่ทางร่างกาย <br>
+            ผู้เล่นต้องเลือกคำตอบที่เหมาะสมกับสถานการณ์ที่ยกตัวอย่างให้ถูกต้อง</p>
+        <button class="next-box" onclick="startCountdown()">ถัดไป</button>
+        </div>
+       </div>
+       <div class="container-box">
+        <div class="box1">     
+            <div class="clock"><div class="timer"></div></div>
+            <div class="content1"> <img src=1(1).png alt="">
+                <p>เมื่อกานต์ถูกหมูน้อยบูลลี่โดยการล้อชื่อพ่อแม่ ควรรับมืออย่างไร</p>
+            </div>
+           <div class="choice"> 
+                <button class="btnchoice1"><span>ไม่โต้ตอบด้วยการกระทำที่รุนแรง ให้นิ่งเฉย ไม่สนใจคำพูดล้อเลียนนั้น</span><i class="fa-solid fa-check hidefa fa1"></i></button>
+                <button class="btnchoice2"><span>ตอบโต้ด้วยการล้อกลับ</span><i class="fa-solid fa-xmark hidefa fa2"></i></button>
+                <button class="btnchoice3"><span>ตอบโต้ด้วยการทุบ ตี หมูน้อย</span><i class="fa-solid fa-xmark hidefa fa3"></i></button>
+                
+            </div>
+            <div class="nextsection" ><button class="next-box2 op0" onclick="startCountdown2()">ข้อต่อไป</button></div>
+
+            
+           
+        </div>
+      
+       </div>
+       <div class="container-box2">
+        <div class="box2">
+            <div class="closebox2"></i></div>
+            <div class="clock"><div class="timer2"></div></div>
+            <div class="content2"> 
+                <img src="2.png" alt="">
+                <p>เมื่อหมูน้อยและกลุ่มเพื่อน พยายามแกล้งกานต์โดยการขโมยรองเท้าเอาไปซ่อน ควรทำอย่างไร</p>
+               </div>
+            <div class="choice2"> 
+                <button class="btn2-1"><span>กานต์ด่าหมูน้อยและเพื่อนๆด้วยถ้อยคำหยาบคาย</span><i class="fa-solid fa-xmark hidefa fa2-1"></i></button>
+                <button class="btn2-2"><span>กานต์นำรองเท้าของหมูน้อยและเพื่อนไปซ่อนคืน</span><i class="fa-solid fa-xmark hidefa fa2-2"></i></button>
+                <button class="btn2-3"><span>ควรแจ้งครูเพื่อให้ครูเป็นฝ่ายตักเตือนหมูน้อย และเพื่อนว่าไม่ควรทำ และเป็นการกระทำที่ผิด</span><i class="fa-solid fa-check hidefa fa2-3"></i></button>
+            </div>
+            <div class="nextsec2"><button class="next-box3 op0" onclick="startCountdown3()">ข้อต่อไป</button></div>
+        </div>
+        
+       </div>
+       
+       <div class="container-box3">
+        <div class="box3">
+    
+            <div class="clock"><div class="timer3"></div></div>
+            <div class="content3">
+                <img src="3.png" alt="">
+                <p>กานต์โดนหมูน้อยแกล้งจนเก็บตัวอยู่ในห้องและไม่ไปโรงเรียนหมูน้อยควรทำอย่างไร</p>    
+            </div>
+            <div class="choice3"> 
+                <button class="btn3-1"><span>อยู่ในห้องจนกว่าจะรู้สึกดีขึ้น</span><i class="fa-solid fa-xmark hidefa fa3-1"></i></button>
+                <button class="btn3-2"><span>ปรึกษาผู้ปกครองหรือโทรหาสายด่วนสุขภาพจิต 1323</span><i class="fa-solid fa-check hidefa fa3-2"></i></button>
+                <button class="btn3-3"><span>ด่าด้วยถ้อยคำหยาบคายกับทุกคนที่แกล้ง</span><i class="fa-solid fa-xmark hidefa fa3-3"></i></button>
+            </div>
+            <div class="nextsec3"><button class="next-box4 op0" onclick="startCountdown4()">ข้อต่อไป</button></div>
+        </div>
+        
+       </div>
+       <div class="container-box4">
+        <div class="box4">
+    
+            <div class="clock"><div class="timer4"></div></div>
+            <div class="content4">
+                <img src="4.png" alt="">
+                <p>เมื่อหมูน้อยโดนใส่ร้ายว่าเป็นคนด่าเพื่อน หรือเป็นคนแกล้งเพื่อนจนร้องไห้ แต่หมูน้อยไม่ได้เป็นคนทำ คิดว่าหมูน้อยควรทำอย่างไรเมื่อเจอสถานการณ์ใส่ร้ายจากเพื่อนแบบนี้</p>    
+            </div>
+            <div class="choice4"> 
+                <button class="btn4-1"><span>ร้องไห้ และ เก็บตัวไม่ยอมไปพบเจอใครเพราะอาย</span><i class="fa-solid fa-xmark hidefa fa4-1"></i></button>
+                <button class="btn4-2"><span>ตอบกลับด้วยคำสุภาพ และ บอกความจริงกับคุณครูว่าไม่ได้ทำ </span><i class="fa-solid fa-check hidefa fa4-2"></i></button>
+                <button class="btn4-3"><span>ตอบกลับด้วยท่าทีโมโห และ ไม่ยอม</span><i class="fa-solid fa-xmark hidefa fa4-3"></i></button>
+            </div>
+            <div class="nextsecpoint"><button class="next-box5 op0">เสร็จสิ้น</button></div>
+        </div>
+        
+       </div>
+       <div class="contanier-score">
+        <div class="box-point">
+            <h1>Module3</h1>
+            <h3>คะแนนที่ได้</h3>
+            <div class="score">
+                <div class="emoji-sad">
+                    <div class="face">
+                      <div class="eyebrow-left"></div>
+                      <div class="eyebrow-right"></div>
+                      <div class="eye-left"></div>
+                      <div class="eye-right"></div>
+                      <div class="mouth-sad"></div>
+                    </div>
+                  </div>
+                <div class="low"></div>
+                <div class="bad"></div>
+                <div class="good"></div>
+                <div class="verygood"></div>
+            </div>
+    
+            <div class="points"> <h3 class="result"></h3> 
+        
+                
+               
+            </div>
+
+              
+          
+            
+           
+           
+            <img src="" alt="">
+            <a href="index.html"><button class="end">ตกลง</button></a>
+        </div>
+       </div>
+    <script src="appmodule3.js"></script>
+</body>
+</html>l
