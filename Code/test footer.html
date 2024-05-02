@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sangsom Media</title>
+        <link rel="stylesheet" href="style.css"> 
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="footerindex.css">
+        <link rel="icon" type="image/่jpg" href="LOGO SM.jpg">
+    
+        
+        <script src="https://kit.fontawesome.com/d04ca4534c.js" crossorigin="anonymous"></script>
+    
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="LOGO SM.jpg" style="width: 50px;margin-left: 20px; float: left;"></a>
+            <div class="nav" >  
+                 <ul>
+                <li class="home"><a href="index.html">HOME</a></li>
+                <li class="about"><a href="about.html">ABOUT</a></li>
+                <li class="product"><a href="PRODUCT.html">PRODUCT</a>
+                <ul style="z-index: 9998;">
+                    <li><a href="GRAPHICS DESIGN.html" style="text-align: center;">Graphic design</a></li>
+                    <li><a href="PHOTO.html" style="text-align: center;">Photograph</a></li>
+                    <li><a href="MAGAZINE.html" style="text-align: center;">Magazine</a></li>
+                    <li><a href="MOTIONGRAPHICS & VIDEO EDITING.html" style="text-align: center;">Motion&Video </a></li>
+                </ul>
+            </li>
+             <li class="Contact"><a  href="contact(1).html">CONTACT</a></li>
+             <li class="Team"><a href="team.html">TEAM</a></li>
+            </ul>
+        </div>
+     
+        </header>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="gra.jpg" style="width: 100%;">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="Photo.jpg" style="width: 100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="maga.jpg" style="width: 100%;">
+            </div>
+            <div class="mySlides fade">
+              <img src="motion.jpg" style="width: 100%;">
+            </div>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+            <span class="dot" style="display: none;"></span> 
+            <span class="dot" style="display: none;"></span> 
+            <span class="dot" style="display: none;"></span> 
+            <span class="dot" style="display: none;"></span> 
+            </div>
+      
+      
+    
+       
+          <h1 style="color: #FFF;font-size: 4em;margin-left: 33.33%;">SANGSOM MEDIA</h1><br>
+          <span style="color: #FFF; text-align: center; font-size: 1.2em;margin-left: 33.33%;">sangsom media company provides various graphics services such as logos, magazines and video editing.  Our company focuses on personnel development all the time.  And always update the style of work according to the needs of customers  Whether it's in terms of graphics, magazines, or whether it's video editing skills.  Our company is updated all the time.</span>
+          <br><br>
+        </div>
+        
+      </div>
+        
+       
+
+          
+    </div>
+</div>
+<h1 style="text-align:left;color: aliceblue;padding: 10px;" >PRODUCT</h1>
+
+
+<div class="rowimg">
+    <div class="columnimg1">
+        <a href="GRAPHICS DESIGN.html" style="text-decoration:none;color: #ccc;">
+            
+            <div class="imgcenterimg"><img src="index2.png" class="image">
+                <div class="overlay">
+                    <div class="text">GRAPHIC DESIGN</div>
+                </div>
+            </div>
+            </a>
+    </div>
+
+    <div class="columnimg2">
+        <a href="PHOTO.html" style="text-decoration:none;color: #ccc;">
+            
+            <div class="imgcenterimg"style="float: left;"><img src="index1.png"class="image">
+                <div class="overlay">
+                    <div class="text">PHOTOGRAPH</div>
+                </div>
+            </div>
+            </a>
+    </div>
+
+    <div class="columnimg3">
+        <a href="MAGAZINE.html" style="text-decoration:none;color: #ccc;">
+            
+            <div class="imgcenterimg"><img src="index3.png"class="image">
+                <div class="overlay">
+                    <div class="text">MAGAZINE</div>
+                </div>
+            </div>
+            </a> 
+    </div>
+
+    <div class="columnimg4">
+        <a href="MOTIONGRAPHICS & VIDEO EDITING.html" style="text-decoration:none;color: #ccc;">
+            
+            <div class="imgcenterimg"><img src="index4.png"class="image">
+                <div class="overlay">
+                    <div class="text">MOTION GRAPHIC <br><br> & <br><br> VIDEO EDITING</div>
+                </div>
+            </div>
+            </a>
+    </div>
+</div>
+<script>    
+let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); 
+
+   
+    }</script>
+    <footer style="background-size: 100%;background-color: #333;">
+  <div class="footer">
+    <div class="col-1">
+        <h3>useful</h3>
+    <a href="#.html">home</a>
+    <a href="#.html">about</a>
+    <a href="#.html">product</a>
+    <a href="#.html">contact</a>
+    <a href="#.html">Team</a>
+    </div>
+    <div class="col-2">
+        <h3>NEWS</h3>
+        <form>
+            <input type="text" placeholder="Reprot a problem" required style=" width: 400px;
+            height: 45px;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            outline: none;
+            border: none;"><br>
+            <button type="submit">Sub</button>
+        </form>
+    </div>
+    <div class="col-3">
+        <h3>Contact</h3>
+        <p>123,xyz </p><br>
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+    </div>
+  </div>
+</footer>
+    </body>
+    
+</html>
