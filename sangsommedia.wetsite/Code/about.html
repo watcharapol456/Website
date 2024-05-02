@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sangsom Media</title>
+        <link rel="stylesheet" href="about.css"> 
+        <link rel="icon" type="image/่jpg" href="LOGO SM.jpg">
+        <link rel="stylesheet" href="footerabot.css">
+        <script src="https://kit.fontawesome.com/d04ca4534c.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+      <header>
+       <a href="index.html"><img src="LOGO SM.jpg" style="width: 50px;margin-left: 20px; float: left;"></a> 
+        <div class="nav" >  
+             <ul>
+            <li class="home"><a href="index.html">HOME</a></li>
+            <li class="about"><a href="about.html">ABOUT</a></li>
+            <li class="product"><a href="PRODUCT.html">PRODUCT</a>
+            <ul style="z-index: 9998;">
+                <li><a href="GRAPHICS DESIGN.html" style="text-align: center;">Graphic design</a></li>
+                <li><a href="PHOTO.html" style="text-align: center;">Photograph</a></li>
+                <li><a href="MAGAZINE.html" style="text-align: center;">Magazine</a></li>
+                <li><a href="MOTIONGRAPHICS & VIDEO EDITING.html" style="text-align: center;">Motion&video </a></li>
+            </ul>
+        </li>
+         <li class="Contact"><a  href="contact(1).html">CONTACT</a></li>
+         <li class="Team"><a href="team.html">TEAM</a></li>
+        </ul>
+    </div>
+ 
+    </header>
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <img src="gra.jpg" style="width: 100%;">
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="Photo.jpg" style="width: 100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="maga.jpg" style="width: 100%;">
+          </div>
+          <div class="mySlides fade">
+            <img src="motion.jpg" style="width: 100%;">
+          </div>
+          </div>
+          <br>
+
+          <div style="text-align:center">
+          <span class="dot" style="display: none;"></span> 
+          <span class="dot" style="display: none;"></span> 
+          <span class="dot" style="display: none;"></span> 
+          <span class="dot" style="display: none;"></span> 
+          </div>
+        <div class="row" style="margin-top:30px ;">
+        <div class="colum1">
+          <br><br><br>
+            <div class="imgcenter"><img src="LOGO.jpg" style="width: 100%;"></div>
+        <br>
+        </div>
+    <div class="colum2" style="margin-top:150px ;padding-left: 100px;">
+        <h1 style="font-size: 50px;">Sangsom Media</h1>
+        <br>
+        <span style="font-size: 25px;"> The company, Sangsom Media is a company that is popular or famous in the online world. Because it launched a company in the field of graphics that are delicate and creative like no other. Until making it possible to work with many large and small entrepreneurs And there are also many young people who are interested in graphic work to visit our website. In addition to our company being outstanding in graphics, there is also in the field of Photography, Motion graphic, Book design that is equally outstanding. Our company has talented, professional and experienced personnel in various fields. It has come through profusely, thus making Sangsom Media Company grow up to this day. And another important thing of the company is to create quality work. unique style and build trust with customers Our work is satisfactory and able to make many businesses succeed beautifully. The company is pleased to be a part of making your business grow. And, of course, in the production of various media. We certainly do not disappoint our customers.</span>
+          <br><br><br>
+    </div>
+</div>
+<script>    
+let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); 
+    }</script>
+
+<div class="footer">
+  <div class="col-1">
+      <h2>USEFUL</h2><br>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="PRODUCT.html">Product</a>
+  <a href="contact(1).html">Contact</a>
+  <a href="team.html">Team</a>
+  </div>
+  <div class="col-2">
+      <h2>REPORT A PROBLEM </h2><br>
+      <form>
+          <input type="text" placeholder="Reprot a problem"" required style=" width: 400px;
+          height: 45px;
+          border-radius: 4px;
+          text-align: center;
+          margin-top: 20px;
+          margin-bottom: 40px;
+          outline: none;
+          border: none;"><br>
+          <button type="submit">Submit</button>
+      </form>
+  </div>
+  <div class="col-3">
+    <div class="social-icons">
+        <h2 style="text-align: center;">CONTACT</h2><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/" target="_blank" >Facebook</a><a href="https://www.facebook.com/" target="_blank" ><i class="fa-brands fa-facebook"></i></a><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/" target="_blank">Instagram</a> <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">E-mail</a><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"><i class="fa-solid fa-envelope"></i></a> 
+        <br>
+
+    </div>
+      
+  </div>
+</div>
+  </body>
+    
+</html>

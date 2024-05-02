@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200&family=Kanit:wght@500&display=swap" rel="stylesheet">
+ }
+ body {
+    margin: 0%;
+    padding: 0;
+
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed; 
+    box-sizing: border-box;
+    background-image: url(bgindex.jpeg);
+    width: 100%;
+    font-family: 'Fclamoon';
+    
+
+}
+ .row{display: table; 
+width: 100%;}
+ .colum1{
+    float: left;
+    width: 50%;
+    display: block;
+ } 
+ .colum2{
+    float: left;
+    width: 50%;
+    display: block; 
+ }
+.row1{display: table;}
+.columfooter1{
+    float: left;
+    width: 33.33%;
+    display: block;
+    text-align: center;
+}
+.columfooter2{
+    float: left;
+    width: 33.33%;
+    display: block;
+    text-align: center;
+    justify-content: center; 
+}
+.columfooter3{
+    float: left;
+    width: 33.33%;
+    display: block;
+    text-align: center;
+}
+
+.imgcenter{
+    text-align: center;
+}
+#more {display: none;}
+.nav ul {
+text-align: right;
+list-style: none;
+background-color: rgb(0,0,0);
+padding: 0%;
+margin: 0;
+
+}
+.nav li {
+    
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 40px;
+}
+.nav a{
+
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+
+    border: 1px solid #888;
+    transition:.3s ;
+
+}
+.nav a:hover{
+    background-color: #491cff;
+}
+.nav a.active {
+    text-align: center;
+    background-color: #aaa;
+    color: #444;
+    cursor: default;
+    text-align: center;
+}
+.nav li li {
+    text-align: center;
+    font-size: .8em;
+    
+}
+@media screen and (min-width : 650px) {
+    .nav li{
+        width: 130px;
+        border: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
+        display: inline-block;
+
+    }
+.nav a {
+    border: none;   
+}
+.nav > ul >li{
+    text-align: center;
+}
+.nav > ul >li >a {
+    padding-left: 0;
+}
+ .nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+ }
+ .nav li:hover ul{
+    display: block;
+ }
+ .nav li ul li {
+    display: inherit;
+ }
+}
+.slideshow-container {
+    max-width: 1920px;
+    position: relative;
+    margin: auto;
+    float: none;
+  }
+  
+  
+    .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  button{
+    cursor: pointer;
+    background:transparent;
+    position: relative;
+    margin: 20px;
+    transition: all 0.25s ease;
+    background: #000;
+    color: #fFF;
+    border-radius: 30px;
+  }
+.centerbutton{
+    text-align: center;
+}
+.spann1 a{
+    text-decoration: none;
+    color: #fff;
+}
+.spann1 a:hover{
+    color: red;
+}
+.rowimg{display: block;}
+.columnimg1{
+display:block;
+width: 25%;
+float: left;
+color: aliceblue;
+padding: 40px;
+padding-top: 0%;
+text-align: center;
+}
+.columnimg2{
+display: block;
+width: 25%;
+float: left;
+color: aliceblue;
+padding: 40px;
+padding-top: 0%;
+text-align: center;
+}
+.columnimg3{
+display: block;
+width: 25%;
+float: left;
+color: aliceblue;
+padding: 40px;
+padding-top: 0%;
+text-align: center;
+}
+.columnimg4{
+display: block;
+width: 25%;
+float: left;
+color: aliceblue;
+padding: 40px;
+padding-top: 0%;
+text-align: center;
+}
+.imgcenterimg{
+text-align: center;
+position: relative;
+height: 640px;
+width: 400px;
+padding: 10px;
+}
+.imgcenterimg:hover {
+opacity: 80%;
+width: 420px;
+height: 660px;
+position: absolute;
+padding: 0;
+}
+.imgcenterimg:hover .overlay {
+border: 1px solid #ccc;
+border-radius: 5%;
+width: 420px;
+height: 660px;
+padding: 0;
+}
+.image {
+display: block;
+width: 100%;
+height: 100%;
+text-align: center;
+opacity: 80%;
+border-radius: 5%;
+}
+.overlay {
+position: absolute;
+bottom: 0%;
+left: 0;
+right: 0;
+overflow: hidden;
+width: 400px;
+height: 100%;
+}
+.text {
+white-space: nowrap; 
+color: white;
+font-size: 1.8em;
+position: absolute;
+overflow: hidden;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
